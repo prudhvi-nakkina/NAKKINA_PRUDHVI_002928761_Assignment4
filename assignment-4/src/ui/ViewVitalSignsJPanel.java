@@ -98,7 +98,6 @@ public class ViewVitalSignsJPanel extends javax.swing.JPanel {
         Patient patient = new Patient();
         Map<Patient, ArrayList<VitalSigns>> history = Patient.getEncounters();
         boolean exists = false;
-        int age = 0;
         String[] columns = {"Date", "Blood Pressure", "Temperature", "Pulse"};
         DefaultTableModel tbl = new DefaultTableModel(columns, 0);
         for (Patient p : history.keySet()) {

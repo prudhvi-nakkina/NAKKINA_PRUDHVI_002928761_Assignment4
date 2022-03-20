@@ -13,16 +13,17 @@ import java.util.HashMap;
  */
 public class Patient extends Person {
     
-    private static HashMap<Patient, ArrayList<VitalSigns>> encounterHistory = new HashMap<Patient,ArrayList<VitalSigns>>();
+    private static HashMap<Patient, ArrayList<VitalSigns>> encounters = new HashMap<Patient,ArrayList<VitalSigns>>();
     private static ArrayList<VitalSigns> vsArray = new ArrayList<VitalSigns>();
 
-    public static HashMap<Patient, ArrayList<VitalSigns>> getEncounterHistory() {
-        return encounterHistory;
+    public static HashMap<Patient, ArrayList<VitalSigns>> getEncounters() {
+        return encounters;
     }
 
-    public static void setEncounterHistory(HashMap<Patient, ArrayList<VitalSigns>> encounterHistory) {
-        Patient.encounterHistory = encounterHistory;
+    public static void setEncounters(HashMap<Patient, ArrayList<VitalSigns>> encounters) {
+        Patient.encounters = encounters;
     }
+    
 
     public static ArrayList<VitalSigns> getVsArray() {
         return vsArray;
