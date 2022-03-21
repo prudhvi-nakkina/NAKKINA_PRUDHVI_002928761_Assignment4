@@ -96,7 +96,6 @@ public class CreateVitalSignsJPanel extends javax.swing.JPanel {
         Map<Patient, ArrayList<VitalSigns>> history = Patient.getEncounters();
         VitalSigns vitals;
         Patient patient = new Patient();
-        int age = 0;
         for (Patient p : history.keySet()) {
             if (Integer.parseInt(txtPatientID.getText()) == p.getId()) {
                 arr = history.get(p);
